@@ -275,7 +275,7 @@ const wordsAndClues = [
     { "word": "sinag", "clues": ["Liwanag mula sa araw.", "Light from the sun."] },
     { "word": "ngiti", "clues": ["Pagpapakita ng kasiyahan sa mukha.", "Expression of happiness on the face."] },
     { "word": "basag", "clues": ["Nawasak na bagay.", "Something broken."] },
-    { "word": "NATAE", "clues": ["salitang balbal na tumutukoy sa pagdumi.", "Refers to the act of defecating."] },
+    { "word": "natae", "clues": ["salitang balbal na tumutukoy sa pagdumi.", "Refers to the act of defecating."] },
     
 ];
 
