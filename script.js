@@ -152,6 +152,7 @@ function handleBackspace() {
 }
 
 // Function to check the user's guess
+// Function to check the user's guess
 function checkGuess() {
     const guessInput = document.getElementById('guessInput');
     const feedback = document.getElementById('feedback');
@@ -169,14 +170,29 @@ function checkGuess() {
 
     let result = '';
     let correctLetters = new Array(currentWord.length).fill(false);
+    let usedInGuess = new Array(currentWord.length).fill(false);
 
     // First pass: Check for exact matches
     for (let i = 0; i < currentWord.length; i++) {
         if (userGuess[i] === currentWord[i]) {
             result += userGuess[i].toUpperCase() + ' ';
             correctLetters[i] = true;
+            usedInGuess[i] = true;
         } else {
-            result += '_ '; // Add space after each underscore
+            result += '_ '; // Placeholder for unmatched letters
+        }
+    }
+
+    // Second pass: Check for correct letters in the wrong position
+    for (let i = 0; i < currentWord.length; i++) {
+        if (!correctLetters[i] && userGuess[i] !== '_') {
+            for (let j = 0; j < currentWord.length; j++) {
+                if (!correctLetters[j] && !usedInGuess[j] && userGuess[i] === currentWord[j]) {
+                    result = result.substring(0, i * 2) + userGuess[i].toLowerCase() + result.substring(i * 2 + 1);
+                    usedInGuess[j] = true;
+                    break;
+                }
+            }
         }
     }
 
