@@ -257,7 +257,7 @@ const wordsAndClues = [
     { "word": "sinta", "clues": ["Salitang pang-ibig.", "Term for a loved one."] },
     { "word": "laban", "clues": ["Paglaban sa isang bagay.", "Act of fighting."] },
     { "word": "sikat", "clues": ["Tanyag o kilala.", "Widely known."] },
-    { "word": "dagat", "clues": ["Malawak na anyong tubig.", "Large salty water body."] },
+    { "word": "dagat", "clues": ["Malawak na anyong tubig.", "Large body of water."] },
     { "word": "araro", "clues": ["Kagamitang pangbukid.", "Tool for farming."] },
     { "word": "bikas", "clues": ["Hitsura ng tao o bagay.", "Physical form."] },
     { "word": "tanso", "clues": ["Uri ng metal.", "A type of metal."] },
@@ -275,6 +275,8 @@ const wordsAndClues = [
     { "word": "sinag", "clues": ["Liwanag mula sa araw.", "Light from the sun."] },
     { "word": "ngiti", "clues": ["Pagpapakita ng kasiyahan sa mukha.", "Expression of happiness on the face."] },
     { "word": "basag", "clues": ["Nawasak na bagay.", "Something broken."] },
+    { "word": "NATAE", "clues": ["salitang balbal na tumutukoy sa pagdumi.", "Refers to the act of defecating."] },
+    
 ];
 
 // Initialize the game on load
