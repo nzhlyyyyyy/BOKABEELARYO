@@ -281,7 +281,7 @@ const wordsAndClues = [
     { "word": "alpas", "clues": ["Kumawala o makalaya mula sa pagkakagapos o pagkakahawak.", "To break free or to escape from constraints."] },
     { "word": "gilas", "clues": ["Kagalingan o kariktan; naglalarawan ng kahusayan at pagiging kahanga-hanga.", "Grace, elegance. Symbolizes poise and remarkable ability."] },
     { "word": "puyag", "clues": ["Sumisimbolo ng paggalang, pagpaparangal, at paghanga sa isang tao o bagay.", "A gesture of salute or respect, often through bowing or a similar act."] },
-    { "word": "dilag", "clues": ["Isang makalumang salita na tumutukoy sa isang babae na may angking kagandahan.", "A poetic or literary term used to describe a beautiful woman."] };
+    { "word": "dilag", "clues": ["Isang makalumang salita na tumutukoy sa isang babae na may angking kagandahan.", "A poetic or literary term used to describe a beautiful woman."] },
     
 ];
 
