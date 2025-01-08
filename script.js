@@ -268,7 +268,6 @@ const wordsAndClues = [
     { "word": "tigas", "clues": ["Katigasan ng bagay.", "Hardness or firmness."] },
     { "word": "sakit", "clues": ["Hindi maganda sa katawan.", "Body discomfort."] },
     { "word": "boses", "clues": ["Tinig ng tao.", "A person's voice."] },
-    { "word": "salit", "clues": ["Mga tunog o salita.", "Words or sounds."] },
     { "word": "tanda", "clues": ["Palatandaan ng edad.", "Sign of age."] },
     { "word": "kanin", "clues": ["Nilutong bigas.", "Cooked rice."] },
     { "word": "ganda", "clues": ["Kaakit-akit na katangian.", "Beauty or charm."] },
