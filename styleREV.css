@@ -1,0 +1,218 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Verdana', sans-serif; /* Base font for fallback */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Prevent content from touching edges on small screens */
+}
+
+/* Container for the Game */
+.container {
+    background: #ffeb3b; /* Light yellow background */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* Adjust height based on content */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title Style */
+h1 {
+    color: #12140f;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Subtle glowing effect */
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Bee Logo */
+.bee-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+#guessInput {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px);
+    max-width: 450px;
+}
+
+/* Buttons */
+button {
+    font-family: 'Press Start 2P', sans-serif; /* Retro-style font */
+    background-color: #ff9800; /* Default button color */
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f57c00; /* Slightly darker shade */
+    transform: scale(1.05); /* Hover scaling effect */
+}
+
+#nextBtn {
+    background-color: #c7432c; /* Next button color */
+    margin-top: 10px;
+}
+
+#nextBtn:hover {
+    background-color: #a33629;
+}
+
+/* Disabled Buttons */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Feedback Text */
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Attempts Display */
+#attempts {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Keyboard */
+#keyboard {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust for responsiveness */
+    gap: 10px;
+    max-width: 300px;
+}
+
+#keyboard button {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #8bc34a; /* Green key color */
+    color: white;
+    border: 1px solid #388e3c;
+    cursor: pointer;
+}
+
+#keyboard button:hover {
+    background-color: #7cb342;
+    transform: scale(1.1); /* Hover scaling */
+}
+
+button.backspace {
+    grid-column: span 3;
+    background-color: #f44336;
+    border: 1px solid #d32f2f;
+    font-size: 18px;
+}
+
+button.backspace:hover {
+    background-color: #e53935;
+}
+
+button.settings {
+    grid-column: span 1;
+    background-color: #2196f3;
+    border: 1px solid #1976d2;
+}
+
+button.settings:hover {
+    background-color: #1e88e5;
+}
+
+/* Tutorial Button */
+.tutorial-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tutorial-button:hover {
+    background-color: #0056b3;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* List Style for Tutorial */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* Intro Section */
+#intro {
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #keyboard {
+        grid-template-columns: repeat(4, 1fr); /* Adjust for smaller screens */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

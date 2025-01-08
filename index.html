@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEECABULARY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* Inline styles for basic keyboard layout */
+        
+    
+        #guessInput {
+            margin: 20px auto;
+            display: block;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            width: 60%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #feedback {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        #attempts {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo-bee.png" alt="Bee Logo" class="bee-logo">
+        <h1>CLUES</h1>
+        <div id="clue"></div>
+        <input type="text" id="guessInput" placeholder="Enter your guess" maxlength="25" readonly>
+        <button id="submitBtn">Submit</button>
+        <div id="feedback"></div>
+        <div id="attempts"></div>
+        <div id="keyboard"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

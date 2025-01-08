@@ -1,0 +1,245 @@
+/* General reset for all elements */
+
+/* Add Google Font for the style similar to Bookworm Adventures */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Apply the font to the buttons */
+button {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box; /* Add box-sizing for consistent layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    font-family: 'Verdana', sans-serif; /* Use a playful, modern font */
+    background-color: #f4f4f4; /* Background color of the page */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+}
+
+/* Container for the entire game */
+.container {
+    background: #ffeb3b; /* Light yellow background color */
+    padding: 20px;
+    border-radius: 20px;   /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    width: 450px;
+    max-width: 100%;
+    height: 900px;
+    
+    font-family: 'Roboto', sans-serif;
+    margin-top: 500px;
+}
+
+/* Title style */
+h1 {
+    color: #12140f; /* Green color for the title */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow for glowing effect */
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Bee logo style */
+.bee-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Input for guesses */
+#guessInput {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+/* Standard button style */
+button {
+    background-color: #ff9800; /* Button color */
+    margin: -1px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #f57c00; /* Darker shade on hover */
+}
+
+/* Feedback text */
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Attempts display */
+#attempts {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Keyboard container */
+
+#keyboard {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 300px;
+}
+#keyboard button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#keyboard button:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Key button style */
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8bc34a; /* Green key color */
+    border: 1px solid #388e3c; /* Darker green border */
+    color: white; /* White color for text */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+/* Key hover effect */
+.key:hover {
+    background-color: #7cb342; /* Slightly darker green */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* Backspace button, spanning 3 columns */
+button.backspace {
+    grid-column: span 3; /* Span across 3 columns */
+    background-color: #f44336; /* Red color for backspace */
+    border: 1px solid #d32f2f; /* Darker red border */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Backspace hover effect */
+button.backspace:hover {
+    background-color: #e53935;
+    transform: scale(1.1);
+}
+
+/* Settings button */
+button.settings {
+    grid-column: span 1; /* Single column for settings button */
+    background-color: #2196f3; /* Blue color for settings */
+    border: 1px solid #1976d2; /* Darker blue border */
+    color: white;
+}
+
+/* Settings hover effect */
+button.settings:hover {
+    background-color: #1e88e5;
+    transform: scale(1.1);
+}
+
+/* Button for Next */
+#nextBtn {
+    position: absolute;
+    right: px;
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c7432c;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Button description for Next */
+#nextdesc {
+    position: absolute;
+    right: 120px;
+    top: 49%;
+    transform: translateY(-50%);
+    padding: 10px 10px;
+    font-size: 11px;
+    background-color: #b14430;
+}
+
+/* Tutorial button */
+.tutorial-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Tutorial button hover effect */
+.tutorial-button:hover {
+    background-color: #0056b3;
+}
+
+/* Back button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Back button hover effect */
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* List style for the tutorial section */
+ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Intro section margin adjustment */
+#intro {
+    margin-bottom: -25px;
+}
+
+#submitBtn {
+    padding: 8px 13px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
